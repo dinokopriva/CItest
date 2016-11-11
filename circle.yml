@@ -11,6 +11,6 @@ deployment:
   staging:
     branch: master
     commands: 
-      - docker login --email=dino.koprivnjak@axilis.com --username=dino.koprivnjak@axilis.com --password=5316bb80-4e42-4cf2-9e2b-6972bc528877 registry.heroku.com
+      - docker login --email=dino.koprivnjak@axilis.com --username=dino.koprivnjak@axilis.com --password=$HEROKU_KEY registry.heroku.com
       - docker tag ci_test:latest registry.heroku.com/ci-test-app1/web
       - docker push registry.heroku.com/ci-test-app1/web
