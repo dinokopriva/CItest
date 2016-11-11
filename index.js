@@ -9,7 +9,7 @@ const root = require('./app/routes');
 app.use(expressPromise);
 app.use(root);
 
-app.get('/', () => {
+app.get('/', (req, res) => {
 	res.send('root');
 });
 
