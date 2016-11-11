@@ -5,7 +5,7 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build  -f ./Dockerfile --rm=false -t ci_test:latest .
+    - docker build  -f ./dockerfile --rm=false -t ci_test:latest .
 
 deployment:
   staging:
