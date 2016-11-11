@@ -1,9 +1,7 @@
 deployment:
   staging:
     branch: master
-    heroku:
-      appname: ci-test-app1
-      commands: 
+    commands: 
       - docker login --email=dinokoprivnjak@axilis.com --username=dinokoprivnjak@axilis.com --password=5316bb80-4e42-4cf2-9e2b-6972bc528877 registry.heroku.com
       - docker push ci_test:latest
 
