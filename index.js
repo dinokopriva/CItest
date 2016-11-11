@@ -9,6 +9,10 @@ const root = require('./app/routes');
 app.use(expressPromise);
 app.use(root);
 
+app.get('/', () => {
+	res.send('root');
+});
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
