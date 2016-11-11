@@ -12,4 +12,4 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build --rm=false -t ci_test:latest . -f ./dockerfile
+    - docker build  -f ./dockerfile --rm=false -t ci_test:latest .
