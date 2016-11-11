@@ -12,5 +12,5 @@ deployment:
     branch: master
     commands: 
       - docker login --email=dinokoprivnjak@axilis.com --username=dinokoprivnjak@axilis.com --password=5316bb80-4e42-4cf2-9e2b-6972bc528877 registry.heroku.com
-      - docker tag ci_test:latest dinokoprivnjak-ci_test/latest
-      - docker push dinokoprivnjak-ci_test/latest
+      - docker tag ci_test:latest dinokoprivnjak@axilis.com/ci_test:latest
+      - docker push registry.heroku.com/dinokoprivnjak@axilis.com/ci_test:latest
