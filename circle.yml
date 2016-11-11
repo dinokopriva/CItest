@@ -1,10 +1,3 @@
-deployment:
-  staging:
-    branch: master
-    commands: 
-      - docker login --email=dinokoprivnjak@axilis.com --username=dinokoprivnjak@axilis.com --password=5316bb80-4e42-4cf2-9e2b-6972bc528877 registry.heroku.com
-      - docker push ci_test:latest
-
 machine:
   services:
     - docker
@@ -13,3 +6,10 @@ dependencies:
   override:
     - docker info
     - docker build  -f ./dockerfile --rm=false -t ci_test:latest .
+
+deployment:
+  staging:
+    branch: master
+    commands: 
+      - docker login --email=dinokoprivnjak@axilis.com --username=dinokoprivnjak@axilis.com --password=5316bb80-4e42-4cf2-9e2b-6972bc528877 registry.heroku.com
+      - docker push ci_test:latest
