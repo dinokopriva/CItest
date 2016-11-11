@@ -1,0 +1,32 @@
+{
+  "name": "ci_test",
+  "version": "1.0.0",
+  "description": "a project for testing continuous integration",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dinokopriva/CItest.git"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "ava ./test"
+  },
+  "author": "Dino Koprivnjak",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-promise": "^3.3.1",
+    "eslint-plugin-react": "^6.6.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "sinon": "^1.17.6"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-promise": "^0.4.0"
+  }
+}
